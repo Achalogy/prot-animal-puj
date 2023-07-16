@@ -30,10 +30,12 @@ export default () => {
         <div className="flex flex-col h-[10vh] xl:h-[15vh] w-full absolute p-4 gap-2 z-10">
           <div className="flex-1 flex justify-between xl:justify-center items-center gap-2 xl:gap-4">
             <div className="xl:flex-1" />
-            <div className="relative h-8 xl:h-12 aspect-square rounded-full bg-white overflow-hidden">
-              <FullImage src={Logo} cover />
+            <div className="flex gap-2 items-center justify-center">
+              <div className="relative h-8 xl:h-12 aspect-square rounded-full bg-white overflow-hidden">
+                <FullImage src={Logo} cover />
+              </div>
+              <h1 className="text-lg xl:text-xl font-semibold tracking-wide text-slate-800">Protección Animal Javeriana</h1>
             </div>
-            <h1 className="text-lg xl:text-xl font-semibold tracking-wide text-slate-800">Protección Animal Javeriana</h1>
             <div className="flex xl:flex-1">
               <div className="flex xl:pl-[25%]">
                 <a href="https://www.instagram.com/proteccionanimaljaveriana/" target="_blank">
@@ -52,7 +54,7 @@ export default () => {
             <p className="font-semibold">Contacto</p>
           </div>
         </div>
-        <div className="relative flex flex-col xl:flex-row justify-center h-screen pt-[10vh] xl:pt-[15vh] bg-[#FFD97E]">
+        <div className="relative flex flex-col xl:flex-row justify-center xl:h-screen pt-[10vh] xl:pt-[15vh] bg-[#FFD97E] overflow-hidden">
           <div className="absolute flex w-full xl:w-2/3 py-[10vh] z-20">
             <div className="rotate-45 opacity-10 m-auto xl:ml-0">
               <IconHuellita className="hidden xl:flex" size={325} svgProps={{
@@ -90,7 +92,7 @@ export default () => {
         <ComiteComponent img={Logo} title="Comité de redes" text="Encargado de difundir contenido relacionado con el grupo por redes sociales, difusión de casos, actividades, etc." />
         <ComiteComponent img={ComiteActividades} title="Comité de actividades" text="Encargado de organizar y convocar activivdades de alimentación, baño, donaciones y adopciones de animales." />
       </div>
-      <footer className="flex flex-col p-8 items-center justify-center h-[30vh] bg-[#FFD97E]">
+      <footer className="flex flex-col p-8 items-center justify-center h-[30vh] bg-[#FFD97E] gap-2">
         <h4 className="flex gap-2 items-center font-semibold text-lg xl:text-3xl truncate"><span className="flex gap-2 items-center text-indigo-600 font-semibold">
           <IconHuesito className="hidden xl:flex" svgProps={{
             stroke: "rgb(79 70 229)"
