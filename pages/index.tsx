@@ -99,7 +99,7 @@ export default () => {
             stroke: "rgb(79 70 229)"
           }} size={15} />
           {new Date().getFullYear()}</span> Protección Animal Javeriana</h4>
-        <p className="opacity-25">Creado por acha {"<3"}</p>
+        <p className="opacity-25 text-center">Creado por acha {"<3"} - PÁGINA NO OFICIAL</p>
       </footer>
     </div>
   )
