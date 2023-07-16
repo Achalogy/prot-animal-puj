@@ -11,7 +11,7 @@ export default ({ children }: {
 
   const { pathname } = useRouter()
 
-  return <div className="relative flex flex-col">
+  return <div className="relative flex flex-col min-h-screen">
     <div className="flex flex-col h-[10vh] xl:h-[15vh] w-full p-4 gap-2 z-10 bg-[#FFD97E]">
       <div className="flex-1 flex justify-between xl:justify-center items-center gap-2 xl:gap-4">
         <div className="xl:flex-1" />
@@ -40,7 +40,9 @@ export default ({ children }: {
       </div>
     </div>
 
-    {children}
+    <div className="flex flex-col flex-1">
+      {children}
+    </div>
 
     <footer className="flex flex-col p-8 items-center justify-center h-[30vh] bg-[#FFD97E] gap-2">
       <h4 className="flex gap-2 items-center font-semibold text-lg xl:text-3xl truncate"><span className="flex gap-2 items-center text-indigo-600 font-semibold">
