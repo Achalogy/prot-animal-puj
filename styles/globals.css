@@ -45,3 +45,10 @@ a {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.huellitas-bg {
+  background: url(/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
