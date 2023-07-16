@@ -1,0 +1,33 @@
+{
+  "name": "nextjs-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "next-sitemap.config.js",
+  "scripts": {
+    "dev": "next dev",
+    "gen:sitemap": "next-sitemap",
+    "build": "next build --debug && next-sitemap",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookies-next": "^2.1.2",
+    "next": "^13.4.10",
+    "next-secure-headers": "^2.2.0",
+    "next-sitemap": "^4.1.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.19",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.26",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6"
+  }
+}
