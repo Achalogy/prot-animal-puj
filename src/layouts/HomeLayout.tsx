@@ -34,12 +34,12 @@ export default ({ children }: {
             <IoReorderThree size={35} />
           </div>
         </div>
-        <div className="flex flex-1 gap-2 items-center justify-center">
+        <Link href={"/"} className="flex flex-1 gap-2 items-center justify-center no-underline">
           <div className="flex relative h-8 xl:h-12 aspect-square rounded-full bg-white overflow-hidden">
             <FullImage src={Logo} cover />
           </div>
-          <h1 className="hidden xs:flex xl:text-xl font-semibold tracking-wide text-slate-800">Protección Animal Javeriana</h1>
-        </div>
+          <h1 className="hidden xs:flex xl:text-xl font-semibold tracking-wide text-slate-800 no-underline">Protección Animal Javeriana</h1>
+        </Link>
         <div className="flex xl:flex-1">
           <div className="flex xl:pl-[25%]">
             <a href="https://www.instagram.com/proteccionanimaljaveriana/" target="_blank">
