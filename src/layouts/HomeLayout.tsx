@@ -34,7 +34,7 @@ export default ({ children }: {
         <Link href={"/nuestra-historia"} className={`no-underline font-semibold ${pathname == "/nuestra-historia" ? "text-[#38A251]" : ""}`}>Nuestra Historia</Link>
         <Link href={"gatos-del-campus"} className={`no-underline font-semibold ${pathname == "/gatos-del-campus" ? "text-[#38A251]" : ""}`}>Gatos del Campus</Link>
         <Link href={"/adopciones"} className={`no-underline font-semibold ${pathname == "/adopciones" ? "text-[#38A251]" : ""}`}>Adopciones</Link>
-        <Link href={"/apadrinamiento"} className={`no-underline font-semibold ${pathname == "/apadrinamiento" ? "text-[#38A251]" : ""}`}>Apadrinamiento</Link>
+        {/* <Link href={"/apadrinamiento"} className={`no-underline font-semibold ${pathname == "/apadrinamiento" ? "text-[#38A251]" : ""}`}>Apadrinamiento</Link> */}
         <Link href={"/fundaciones"} className={`no-underline font-semibold ${pathname == "/fundaciones" ? "text-[#38A251]" : ""}`}>Directorio Fundaciones</Link>
         <Link href={"/contacto"} className={`no-underline font-semibold ${pathname == "/contacto" ? "text-[#38A251]" : ""}`}>Contacto</Link>
       </div>
