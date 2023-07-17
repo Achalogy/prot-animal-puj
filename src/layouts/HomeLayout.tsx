@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { AiFillInstagram } from "react-icons/ai"
+import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai"
 import FullImage from "src/components/FullImage"
 import IconHuesito from "src/iconts/IconHuesito"
 import Logo from '../../assets/icon.jpg'
@@ -44,7 +44,7 @@ export default ({ children }: {
       {children}
     </div>
 
-    <footer className="flex flex-col p-8 items-center justify-center h-[30vh] bg-[#FFD97E] gap-2">
+    <footer className="flex flex-col p-8 items-center justify-center h-[30vh] bg-[#FFD97E] gap-3">
       <h4 className="flex gap-2 items-center font-semibold text-lg xl:text-3xl truncate"><span className="flex gap-2 items-center text-indigo-600 font-semibold">
         <IconHuesito className="hidden xl:flex" svgProps={{
           stroke: "rgb(79 70 229)"
@@ -54,6 +54,17 @@ export default ({ children }: {
         }} size={15} />
         {new Date().getFullYear()}</span> Protección Animal Javeriana</h4>
       <p className="opacity-25 text-center">Creado por acha {"<3"} - PÁGINA NO OFICIAL</p>
+      <div className="flex gap-4 opacity-50">
+        <a href="https://www.instagram.com/proteccionanimaljaveriana" target="_blank">
+          <AiFillInstagram size={35} />
+        </a>
+        <a href="https://facebook.com/ProteccionAnimalJaveriana/" target="_blank">
+          <AiFillFacebook size={35} />
+        </a>
+        <a href="https://twitter.com/JaverianaAnimal" target="_blank">
+          <AiFillTwitterCircle size={35} />
+        </a>
+      </div>
     </footer>
   </div>
 }
