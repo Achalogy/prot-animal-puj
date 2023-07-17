@@ -44,6 +44,12 @@ export default () => {
 
   return (
     <HomeLayout>
+      <div className="bg-[#007664]">
+        <div className="flex flex-col gap-4 p-8 huellitas-bg text-center text-white">
+          <p className="font-semibold text-4xl">Conoce a nuestros</p>
+          <h2 className="font-black text-6xl">Gatos del Campus</h2>
+        </div>
+      </div>
       <GatitoComponent i={0} gender="female" img={GatitaNany} name="Nany" place="La Frutera" text="Yo soy Nany, una gata muy tímida, no me siento muy a gusto con tanta gente y no me gusta que me miren mientras como, tampoco soy fan de las caricias, pero si me dejas comidita ¡te lo agradezco!" />
       <GatitoComponent i={1} gender="female" img={GatitaSarita} name="Sarita" place="Básicas" text="Yo soy Sarita, soy una señora muy tímida que ama la comida húmeda, me llevo muy bien con el personal de seguridad que me cuida en el lugar donde habito, no me gusta que me toquen, consiénteme dándome comidita" />
       <GatitoComponent i={2} gender="female" img={GatitaAleli} name="Alelí" place="Playita de Artes" text="Yo soy Alelí, una gata tímida pero amorosa, mi mejor amiga es Florecita, del personal de seguridad, soy consentida dependiendo de la persona, si ves que no estoy a gusto prefiero evitar que me toquen, vivo un poco enfermita, cuídame mucho, ¡gracias!" />
