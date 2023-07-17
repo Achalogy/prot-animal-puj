@@ -46,8 +46,8 @@ export default () => {
     <HomeLayout>
       <div className="bg-[#007664]">
         <div className="flex flex-col gap-4 p-8 huellitas-bg text-center text-white">
-          <p className="font-semibold text-4xl">Conoce a nuestros</p>
-          <h2 className="font-black text-6xl">Gatos del Campus</h2>
+          <p className="font-semibold text-3xl xl:text-4xl">Conoce a nuestros</p>
+          <h2 className="font-black text-4xl xl:text-6xl">Gatos del Campus</h2>
         </div>
       </div>
       <GatitoComponent i={0} gender="female" img={GatitaNany} name="Nany" place="La Frutera" text="Yo soy Nany, una gata muy tímida, no me siento muy a gusto con tanta gente y no me gusta que me miren mientras como, tampoco soy fan de las caricias, pero si me dejas comidita ¡te lo agradezco!" />
