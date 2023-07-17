@@ -1,6 +1,6 @@
 import FullImage from "src/components/FullImage"
 import IconHuellita from "src/iconts/IconHuellita"
-import Perro1 from 'assets/perro1.png'
+import Perro1 from 'assets/perro1.webp'
 import { StaticImageData } from "next/image"
 import GatosDelCampus from '../assets/gatos-del-campus.png'
 import ComiteActividades from '../assets/actividades.webp'
@@ -15,7 +15,7 @@ export default () => {
   }) => {
     return <div className="flex flex-col flex-1 gap-4">
       <div className="relative w-1/2 aspect-square bg-indigo-300 rounded-full mx-auto overflow-hidden">
-        <FullImage src={img} cover />
+        <FullImage src={img} cover priority />
       </div>
       <div className="flex flex-col gap-2 px-8">
         <h3 className="text-lg font-semibold tracking-wide">{title}</h3>

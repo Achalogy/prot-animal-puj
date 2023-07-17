@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
-export default ({ src, alt = "", cover, contain, className }: { src: string | StaticImageData, alt?: string, className?: string, cover?: boolean, contain?: boolean }) => {
+export default ({ src, alt = "", cover, contain, className, priority = false }: { src: string | StaticImageData, alt?: string, className?: string, cover?: boolean, contain?: boolean, priority?: boolean }) => {
   const pageProps = cover ? {
     width: 0,
     height: 0,
@@ -32,5 +32,6 @@ export default ({ src, alt = "", cover, contain, className }: { src: string | St
       objectFit: cover ? "cover" : contain ? "contain" : "fill"
     }}
     className={className}
+    priority={priority}
   />
 }
