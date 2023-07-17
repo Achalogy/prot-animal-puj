@@ -1,10 +1,12 @@
 import FullImage from "src/components/FullImage"
 import HomeLayout from "src/layouts/HomeLayout"
 import Gatito1 from '../../assets/gatito1.png'
+import DefaultSeo from "src/SEO/defaultSeo"
 
 export default () => {
   return (
     <HomeLayout>
+      <DefaultSeo title="Adopciones" />
       <div className="bg-[#ed6d61]">
         <div className="flex xl:h-[85vh] huellitas-bg">
           <div className="flex gap-16 items-center justify-center mx-auto h-full">

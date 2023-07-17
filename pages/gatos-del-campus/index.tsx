@@ -9,6 +9,7 @@ import GatitaNany from '../../assets/gatos-del-campus/nany.webp'
 import GatitaSarita from '../../assets/gatos-del-campus/sarita.webp'
 import GatitaLola from '../../assets/gatos-del-campus/lola.webp'
 import GatitoNacho from '../../assets/gatos-del-campus/nacho.webp'
+import DefaultSeo from "src/SEO/defaultSeo"
 
 export default () => {
 
@@ -44,6 +45,7 @@ export default () => {
 
   return (
     <HomeLayout>
+      <DefaultSeo title="Gatos del Campus" />
       <div className="bg-[#007664]">
         <div className="flex flex-col gap-4 p-8 huellitas-bg text-center text-white">
           <p className="font-semibold text-3xl xl:text-4xl">Conoce a nuestros</p>

@@ -3,10 +3,12 @@ import Logo from '../../assets/icon.jpg'
 import FullImage from "src/components/FullImage"
 import IconHuellita from "src/iconts/IconHuellita"
 import IconHuesito from "src/iconts/IconHuesito"
+import DefaultSeo from "src/SEO/defaultSeo"
 
 export default () => {
   return (
     <HomeLayout>
+      <DefaultSeo title="Nuestra Historia" />
       <div className="bg-[#FFD97E]">
         <div className="flex xl:h-[85vh] huellitas-bg py-[5vh] xl:py-0">
           <div className="flex gap-16 items-center justify-center xl:w-2/3 mx-auto h-full">

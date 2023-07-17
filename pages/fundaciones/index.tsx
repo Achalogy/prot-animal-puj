@@ -10,6 +10,7 @@ import DogsAndHugs from '../../assets/fundaciones/DogsAndHugs.webp'
 import AlmaPerruna from '../../assets/fundaciones/AlmaPerruna.webp'
 import DameVida from '../../assets/fundaciones/DameVida.webp'
 import Tepa from '../../assets/fundaciones/Tepa.webp'
+import DefaultSeo from "src/SEO/defaultSeo"
 
 export default () => {
   const FundationComponent = ({ img, title, texts }: {
@@ -28,6 +29,7 @@ export default () => {
 
   return (
     <HomeLayout>
+      <DefaultSeo title="Fundaciones" />
       <div className="bg-[#A97BFD]">
         <div className="flex flex-col gap-2 p-8 huellitas-bg text-center text-white">
           <h2 className="font-black text-4xl xl:text-6xl">Directorio de Fundaciones</h2>

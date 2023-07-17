@@ -6,6 +6,7 @@ import GatosDelCampus from '../assets/gatos-del-campus.png'
 import ComiteActividades from '../assets/actividades.webp'
 import HomeLayout from "src/layouts/HomeLayout"
 import Logo from '../assets/icon.jpg'
+import DefaultSeo from "src/SEO/defaultSeo"
 
 export default () => {
 
@@ -25,6 +26,7 @@ export default () => {
 
   return (
     <HomeLayout>
+      <DefaultSeo />
       <div className="relative flex flex-col xl:flex-row justify-center min-h-[90vh] xl:h-[85vh] xl:min-h-[85vh] bg-[#FFD97E] overflow-hidden">
         <div className="absolute flex w-full xl:w-2/3 py-[10vh] z-20">
           <div className="rotate-45 opacity-10 m-auto xl:ml-0">
