@@ -6,7 +6,12 @@ module.exports = {
     "./src/constants/subjects.ts"
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '400px',
+      },
+
+    },
   },
   plugins: [],
 }

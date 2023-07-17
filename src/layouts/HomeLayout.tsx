@@ -4,22 +4,41 @@ import FullImage from "src/components/FullImage"
 import IconHuesito from "src/iconts/IconHuesito"
 import Logo from '../../assets/icon.jpg'
 import { useRouter } from "next/router"
+import { IoReorderThree } from 'react-icons/io5'
+import { useState } from "react"
 
 export default ({ children }: {
   children: any
 }) => {
+  const [mobileMenu, setMobileMenu] = useState<boolean>(false)
+
+  const toggleMobileMenu = () => setMobileMenu(prev => !prev)
 
   const { pathname } = useRouter()
+
+  const MenusComps = () => <>
+    <Link href={"/"} className={`no-underline font-semibold ${pathname == "/" ? "text-[#38A251]" : ""}`}>Inicio</Link>
+    <Link href={"/nuestra-historia"} className={`no-underline font-semibold ${pathname == "/nuestra-historia" ? "text-[#38A251]" : ""}`}>Nuestra Historia</Link>
+    <Link href={"gatos-del-campus"} className={`no-underline font-semibold ${pathname == "/gatos-del-campus" ? "text-[#38A251]" : ""}`}>Gatos del Campus</Link>
+    <Link href={"/adopciones"} className={`no-underline font-semibold ${pathname == "/adopciones" ? "text-[#38A251]" : ""}`}>Adopciones</Link>
+    {/* <Link href={"/apadrinamiento"} className={`no-underline font-semibold ${pathname == "/apadrinamiento" ? "text-[#38A251]" : ""}`}>Apadrinamiento</Link> */}
+    <Link href={"/fundaciones"} className={`no-underline font-semibold ${pathname == "/fundaciones" ? "text-[#38A251]" : ""}`}>Directorio Fundaciones</Link>
+    <Link href={"/contacto"} className={`no-underline font-semibold ${pathname == "/contacto" ? "text-[#38A251]" : ""}`}>Contacto</Link>
+  </>
 
   return <div className="relative flex flex-col min-h-screen">
     <div className="flex flex-col h-[10vh] xl:h-[15vh] w-full p-4 gap-2 z-10 bg-[#FFD97E]">
       <div className="flex-1 flex justify-between xl:justify-center items-center gap-2 xl:gap-4">
-        <div className="xl:flex-1" />
-        <div className="flex gap-2 items-center justify-center">
-          <div className="relative h-8 xl:h-12 aspect-square rounded-full bg-white overflow-hidden">
+        <div className="xl:flex-1">
+          <div className="flex xl:hidden cursor-pointer" onClick={toggleMobileMenu}>
+            <IoReorderThree size={35} />
+          </div>
+        </div>
+        <div className="flex flex-1 gap-2 items-center justify-center">
+          <div className="flex relative h-8 xl:h-12 aspect-square rounded-full bg-white overflow-hidden">
             <FullImage src={Logo} cover />
           </div>
-          <h1 className="text-lg xl:text-xl font-semibold tracking-wide text-slate-800">Protección Animal Javeriana</h1>
+          <h1 className="hidden xs:flex xl:text-xl font-semibold tracking-wide text-slate-800">Protección Animal Javeriana</h1>
         </div>
         <div className="flex xl:flex-1">
           <div className="flex xl:pl-[25%]">
@@ -30,13 +49,7 @@ export default ({ children }: {
         </div>
       </div>
       <div className="flex-1 hidden xl:flex justify-around xl:w-2/3 items-center text-gray-600 mx-auto xl:text-lg">
-        <Link href={"/"} className={`no-underline font-semibold ${pathname == "/" ? "text-[#38A251]" : ""}`}>Inicio</Link>
-        <Link href={"/nuestra-historia"} className={`no-underline font-semibold ${pathname == "/nuestra-historia" ? "text-[#38A251]" : ""}`}>Nuestra Historia</Link>
-        <Link href={"gatos-del-campus"} className={`no-underline font-semibold ${pathname == "/gatos-del-campus" ? "text-[#38A251]" : ""}`}>Gatos del Campus</Link>
-        <Link href={"/adopciones"} className={`no-underline font-semibold ${pathname == "/adopciones" ? "text-[#38A251]" : ""}`}>Adopciones</Link>
-        {/* <Link href={"/apadrinamiento"} className={`no-underline font-semibold ${pathname == "/apadrinamiento" ? "text-[#38A251]" : ""}`}>Apadrinamiento</Link> */}
-        <Link href={"/fundaciones"} className={`no-underline font-semibold ${pathname == "/fundaciones" ? "text-[#38A251]" : ""}`}>Directorio Fundaciones</Link>
-        <Link href={"/contacto"} className={`no-underline font-semibold ${pathname == "/contacto" ? "text-[#38A251]" : ""}`}>Contacto</Link>
+        <MenusComps />
       </div>
     </div>
 
@@ -66,5 +79,17 @@ export default ({ children }: {
         </a>
       </div>
     </footer>
+
+    { /* Mobile menu */}
+
+    {mobileMenu && <div className="flex flex-col fixed h-screen bg-[#5261b1] w-[65%] drop-shadow-xl z-50 p-6 py-8 text-white gap-8">
+      <div className="flex items-center gap-2 xl:hidden cursor-pointer" onClick={toggleMobileMenu}>
+        <IoReorderThree size={35} />
+        <p className="font-semibold text-lg">Menú</p>
+      </div>
+      <div className="flex flex-col gap-2">
+        <MenusComps />
+      </div>
+    </div>}
   </div>
 }
