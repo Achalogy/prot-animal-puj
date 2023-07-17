@@ -17,7 +17,7 @@ export default () => {
     img: string | StaticImageData,
     title: string,
     texts: any[]
-  }) => <div className="flex flex-col xl:flex-row gap-4 items-center bg-slate-200 rounded-md drop-shadow-md px-6 p-4 w-[85vw]">
+  }) => <div className="flex flex-col xl:flex-row gap-4 items-center bg-slate-200 rounded-md drop-shadow-md px-6 p-4 w-[85vw] xl:w-auto">
       <div className="w-full xl:h-[15vh] xl:w-[20%] mr-auto">
         <FullImage src={img} contain />
       </div>
