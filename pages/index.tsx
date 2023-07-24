@@ -18,8 +18,8 @@ export default () => {
         <FullImage src={img} cover priority />
       </div>
       <div className="flex flex-col gap-2 px-8">
-        <h3 className="text-lg font-semibold tracking-wide">{title}</h3>
-        <p>{text}</p>
+        <h3 className="text-lg xl:text-2xl font-semibold tracking-wide">{title}</h3>
+        <p className="xl:text-lg">{text}</p>
       </div>
     </div>
   }
@@ -50,7 +50,7 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center xl:w-2/3 xl:min-h-[35vh] text-center mx-auto p-6">
+      <div className="flex flex-col justify-center xl:w-2/3 text-center mx-auto p-6 xl:py-8">
         <h2 className="flex gap-2 justify-center items-center text-2xl xl:text-4xl font-black mb-8 truncate">
           <IconHuellita className="hidden xl:flex" size={25} svgProps={{ strokeWidth: 6 }} />
           <IconHuellita className="xl:hidden flex" size={15} svgProps={{ strokeWidth: 6 }} />
@@ -59,7 +59,7 @@ export default () => {
         <p className="xl:text-lg">
           ¡Bienvenidos a nuestro sitio web de Protección Animal de la Pontificia Universidad Javeriana! Somos un apasionado grupo de estudiantes comprometidos con el medio ambiente, la fauna y la flora en nuestro campus universitario. Desde <b>2008</b>, nos hemos dedicado a cuidar y proteger a los animales que conviven con nosotros, incluidos los <b>adorables gatos del campus</b>. Nuestra misión es difundir casos, brindar atención y generar conciencia sobre la importancia de respetar y preservar la vida animal. ¡Únete a nuestra comunidad y ayudanos a cambiar vidas <b>Una huellita a la vez</b>!</p>
       </div>
-      <div className="flex flex-col xl:flex-row gap-4 xl:gap-2 justify-center xl:w-2/3 xl:min-h-[40vh] text-center mx-auto p-6">
+      <div className="flex flex-col xl:flex-row gap-4 xl:gap-2 justify-center items-center xl:w-2/3 text-center mx-auto p-6 xl:py-8">
         <ComiteComponent img={GatosDelCampus} title="Comité de gatos de la U" text="Encargado del cuidado y alimentación de los gatos que viven en la universidad" />
         <ComiteComponent img={Logo} title="Comité de redes" text="Encargado de difundir contenido relacionado con el grupo por redes sociales, difusión de casos, actividades, etc." />
         <ComiteComponent img={ComiteActividades} title="Comité de actividades" text="Encargado de organizar y convocar activivdades de alimentación, baño, donaciones y adopciones de animales." />
