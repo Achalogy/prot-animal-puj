@@ -51,7 +51,7 @@ export default () => {
         </div>
       </div>
       <div className="flex flex-col justify-center xl:w-2/3 xl:min-h-[35vh] text-center mx-auto p-6">
-        <h2 className="flex gap-2 justify-center items-center text-2xl xl:min-h-[35vh] xl:text-4xl font-black mb-8 truncate">
+        <h2 className="flex gap-2 justify-center items-center text-2xl xl:text-4xl font-black mb-8 truncate">
           <IconHuellita className="hidden xl:flex" size={25} svgProps={{ strokeWidth: 6 }} />
           <IconHuellita className="xl:hidden flex" size={15} svgProps={{ strokeWidth: 6 }} />
           ¿Quienes somos?
