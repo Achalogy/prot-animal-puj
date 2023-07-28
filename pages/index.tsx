@@ -1,5 +1,5 @@
 import FullImage from "src/components/FullImage"
-import IconHuellita from "src/iconts/IconHuellita"
+import IconHuellita from "src/icons/IconHuellita"
 import Perro1 from 'assets/perro1.webp'
 import { StaticImageData } from "next/image"
 import GatosDelCampus from '../assets/gatos-del-campus.png'

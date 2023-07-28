@@ -1,8 +1,8 @@
 import HomeLayout from "src/layouts/HomeLayout"
 import Logo from '../../assets/icon.jpg'
 import FullImage from "src/components/FullImage"
-import IconHuellita from "src/iconts/IconHuellita"
-import IconHuesito from "src/iconts/IconHuesito"
+import IconHuellita from "src/icons/IconHuellita"
+import IconHuesito from "src/icons/IconHuesito"
 import DefaultSeo from "src/SEO/defaultSeo"
 
 export default () => {

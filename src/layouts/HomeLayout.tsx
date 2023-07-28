@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai"
 import FullImage from "src/components/FullImage"
-import IconHuesito from "src/iconts/IconHuesito"
+import IconHuesito from "src/icons/IconHuesito"
 import Logo from '../../assets/icon.jpg'
 import { useRouter } from "next/router"
 import { IoReorderThree } from 'react-icons/io5'

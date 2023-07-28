@@ -1,7 +1,7 @@
 import FullImage from "src/components/FullImage"
 import HomeLayout from "src/layouts/HomeLayout"
 import { BiMap } from 'react-icons/bi'
-import IconHuellita from "src/iconts/IconHuellita"
+import IconHuellita from "src/icons/IconHuellita"
 import { StaticImageData } from "next/image"
 
 import GatitaAleli from '../../assets/gatos-del-campus/aleli.webp'
