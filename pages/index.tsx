@@ -27,7 +27,7 @@ export default () => {
   return (
     <HomeLayout>
       <DefaultSeo />
-      <div className="relative flex flex-col xl:flex-row justify-center min-h-[90vh] xl:h-[85vh] xl:min-h-[85vh] bg-[#FFD97E] overflow-hidden">
+      <div className="relative flex flex-col xl:flex-row justify-center bg-[#FFD97E] overflow-hidden">
         <div className="absolute flex w-full xl:w-2/3 py-[10vh] z-20">
           <div className="rotate-45 opacity-10 m-auto xl:ml-0">
             <IconHuellita className="hidden xl:flex" size={325} svgProps={{
