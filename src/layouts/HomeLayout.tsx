@@ -53,7 +53,11 @@ export default ({ children }: {
       </div>
     </div>
 
-    <div className="flex flex-col flex-1">
+
+    <div className="relative flex flex-col flex-1">
+      <div className="text-xs xl:text-base bg-[#5261b1] p-2 px-4 w-full z-50">
+        <p className="font-semibold text-white text-center">¡Tenemos Inscripciones abiertas! <Link className="font-semibold" href={"https://forms.office.com/r/wt55a2QC1U"}>Regístrate en este formulario.</Link></p>
+      </div>
       {children}
     </div>
 
