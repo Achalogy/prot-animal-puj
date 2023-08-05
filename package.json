@@ -13,7 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@next/font": "^13.4.12",
+    "@types/fabric": "^5.3.3",
+    "canvas": "^2.11.2",
     "cookies-next": "^2.1.2",
+    "fabric": "^5.3.0",
     "next": "^13.4.10",
     "next-secure-headers": "^2.2.0",
     "next-sitemap": "^4.1.8",
