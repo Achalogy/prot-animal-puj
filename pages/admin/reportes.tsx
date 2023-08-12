@@ -30,7 +30,7 @@ export default () => {
 
   return <div className="flex flex-col h-screen w-screen bg-slate-300">
     <DefaultSeo title="ADMIN - Reportes PAJ" />
-    <div className="flex huellitas-bg w-full h-full">
+    <div className="flex huellitas-bg w-full h-full p-2">
       <div className="bg-white rounded-md p-2 xl:w-2/3 m-auto h-[90%] overflow-scroll">
         {data.map(d =>
           <div className="flex border-b border-b-slate-200 p-2 gap-2">
@@ -46,6 +46,6 @@ export default () => {
           </div>
         )}
       </div>
-    d</div>
+    </div>
   </div>
 }
