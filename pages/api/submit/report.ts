@@ -1,7 +1,8 @@
+import connectDB from "middleware/mongoose";
 import { NextApiRequest, NextApiResponse } from "next";
 import { Reports } from "src/models/reporte";
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default connectDB(async (req: NextApiRequest, res: NextApiResponse) => {
   const { files, description } = req.body;
 
   if(!description) return res.status(400).end('Invalid Body')
@@ -12,4 +13,4 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   })
 
   return res.status(200).end("OK")
-}
+})

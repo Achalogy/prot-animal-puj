@@ -2,9 +2,6 @@
 import multer from 'multer';
 import {
   S3Client,
-  ListBucketsCommand,
-  ListObjectsV2Command,
-  GetObjectCommand,
   PutObjectCommand
 } from "@aws-sdk/client-s3"; import { NextApiRequest, NextApiResponse } from "next";
 import { v4 as uuidv4 } from 'uuid';
