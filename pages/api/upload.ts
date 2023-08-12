@@ -27,7 +27,7 @@ export default async (req: any, res: NextApiResponse) => {
 
   if (!req.file) return res.status(400).end("No File")
 
-  if (req.file.size > 64000000) return res.status(400).end("File Too Large");
+  if (req.file.size > 64000000000) return res.status(400).end("File Too Large");
 
   const s3 = new S3Client({
     endpoint: `https://${process.env.ACCOUNT_ID}.r2.cloudflarestorage.com`,
