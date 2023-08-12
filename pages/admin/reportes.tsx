@@ -38,7 +38,7 @@ export default () => {
               {d.description}
             </p>
             <div className="flex flex-col justify-center gap-2 flex-1 bg-sky-100 p-2">
-              {d.files.map((f, i) => <a target="_blank" className="text-xs text-purple-400" href={f}>Archivo {i + 1}</a>)}
+              {d.files.map((f: any, i: any) => <a target="_blank" className="text-xs text-purple-400" href={f}>Archivo {i + 1}</a>)}
             </div>
             <p className="bg-slate-100 flex-[1] rounded-md p-2">
               {d.timestamp.toLocaleString()}
