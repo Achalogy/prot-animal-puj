@@ -22,7 +22,7 @@ const runMiddleware = (req: NextApiRequest, res: NextApiResponse, fn: any) => {
 export default async (req: any, res: NextApiResponse) => {
   await runMiddleware(req, res, upload.single('media'));
 
-  if (!req.file) return res.status(400).end("No File")
+  // if (!req.file) return res.status(400).end("No File")
 
   if (req.file.size > 64000000000) return res.status(400).end("File Too Large");
 
