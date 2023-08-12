@@ -5,6 +5,7 @@ import IconHuesito from "src/icons/IconHuesito"
 import Logo from '../../assets/icon.jpg'
 import { useRouter } from "next/router"
 import { IoReorderThree } from 'react-icons/io5'
+import { MdOutlineReportProblem } from 'react-icons/md'
 import { useState } from "react"
 
 export default ({ children }: {
@@ -24,6 +25,9 @@ export default ({ children }: {
     {/* <Link href={"/apadrinamiento"} className={`no-underline font-semibold ${pathname == "/apadrinamiento" ? "text-[#38A251]" : ""}`}>Apadrinamiento</Link> */}
     <Link href={"/fundaciones"} className={`no-underline font-semibold ${pathname == "/fundaciones" ? "text-[#38A251]" : ""}`}>Directorio Fundaciones</Link>
     <Link href={"/contacto"} className={`no-underline font-semibold ${pathname == "/contacto" ? "text-[#38A251]" : ""}`}>Contacto</Link>
+    <Link href={"/reportar"} className={`flex gap-2 no-underline font-semibold items-center ${pathname == "/reportar" ? "text-[#38A251]" : ""}`}>
+      <MdOutlineReportProblem size={20} />
+      Reportar</Link>
   </>
 
   return <div className="relative flex flex-col min-h-screen">
