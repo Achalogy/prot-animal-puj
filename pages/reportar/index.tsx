@@ -55,11 +55,11 @@ export default () => {
     setUploading(false)
   }
 
-  return <div className="flex gap-8 h-screen w-full items-center justify-center bg-[#FFD97E]">
+  return <div className="flex gap-8 h-screen w-screen items-center justify-center bg-[#FFD97E]">
     <DefaultSeo title="Reportar" />
-    <div className="flex-1 flex h-screen flex-col huellitas-bg p-4 items-center justify-center gap-24">
+    <div className="flex-1 flex h-screen w-screen flex-col huellitas-bg p-4 items-center justify-center gap-24">
       <Link href={"/"}><IconPAJ size={80} /></Link>
-      <div className="flex flex-col gap-4 xl:gap-8 w-full xl:w-1/3 mx-auto bg-white px-8 p-4 xl:p-8 xl:px-12 rounded-md">
+      <div className="flex flex-col gap-4 xl:gap-8 w-full xl:w-1/3 mx-auto bg-white px-8 p-4 xl:p-8 xl:px-12 rounded-md max-w-[95%]">
         <h1 className="font-semibold text-xl xl:text-2xl text-center">¿Quieres reportar algo?</h1>
         <div className="flex flex-col xl:flex-row items-center justify-center gap-2 xl:gap-8">
           <textarea value={description} onChange={(e) => setDescription(e.target.value)} rows={4} className="bg-slate-200 outline-none rounded-md w-full resize-none p-2" placeholder="Me gustaría reportar..." />
@@ -83,7 +83,7 @@ export default () => {
             )}
           </Dropzone>
           {files.map((f, i) => (
-            <div className="flex justify-between bg-yellow-100 px-3 p-2 rounded-md ">
+            <div className="flex justify-between bg-yellow-100 px-3 p-2 rounded-md">
               <p className="truncate">{f.name}</p>
               <RxCross2 className="p-1 rounded-full cursor-pointer" size={25} onClick={() => {
                 setFiles(prev => prev.filter((_, a) => a != i))
