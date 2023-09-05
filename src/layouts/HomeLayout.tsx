@@ -7,6 +7,7 @@ import { useRouter } from "next/router"
 import { IoReorderThree } from 'react-icons/io5'
 import { MdOutlineReportProblem } from 'react-icons/md'
 import { useState } from "react"
+import IconHuellita from "src/icons/IconHuellita"
 
 export default ({ children }: {
   children: any
@@ -19,14 +20,20 @@ export default ({ children }: {
 
   const MenusComps = () => <>
     <Link href={"/"} className={`no-underline font-semibold ${pathname == "/" ? "text-[#38A251]" : ""}`}>Inicio</Link>
-    <Link href={"/nuestra-historia"} className={`no-underline font-semibold ${pathname == "/nuestra-historia" ? "text-[#38A251]" : ""}`}>Nuestra Historia</Link>
-    <Link href={"gatos-del-campus"} className={`no-underline font-semibold ${pathname == "/gatos-del-campus" ? "text-[#38A251]" : ""}`}>Gatos del Campus</Link>
-    <Link href={"/adopciones"} className={`no-underline font-semibold ${pathname == "/adopciones" ? "text-[#38A251]" : ""}`}>Adopciones</Link>
-    {/* <Link href={"/apadrinamiento"} className={`no-underline font-semibold ${pathname == "/apadrinamiento" ? "text-[#38A251]" : ""}`}>Apadrinamiento</Link> */}
-    <Link href={"/fundaciones"} className={`no-underline font-semibold ${pathname == "/fundaciones" ? "text-[#38A251]" : ""}`}>Directorio Fundaciones</Link>
-    <Link href={"/contacto"} className={`no-underline font-semibold ${pathname == "/contacto" ? "text-[#38A251]" : ""}`}>Contacto</Link>
-    <Link href={"/reportar"} className={`flex gap-2 no-underline font-semibold items-center ${pathname == "/reportar" ? "text-[#38A251]" : ""}`}>
-      <MdOutlineReportProblem size={20} />
+    <Link href={"/nuestra-historia"} className={`no-underline font-semibold ${pathname.includes("/nuestra-historia") ? "text-[#38A251]" : ""}`}>Nuestra Historia</Link>
+    <Link href={"/animales-del-campus"} className={`flex gap-2 no-underline font-semibold items-center ${pathname.includes("/animales-del-campus") ? "text-[#38A251]" : ""}`}>
+      <IconHuellita size={10} svgProps={{
+        stroke: pathname.includes("/animales-del-campus") ? "rgb(56 162 81)" : "rgb(75 85 99)",
+        strokeWidth: 7
+      }} />
+      Animales del Campus
+    </Link>
+    <Link href={"/adopciones"} className={`no-underline font-semibold ${pathname.includes("/adopciones") ? "text-[#38A251]" : ""}`}>Adopciones</Link>
+    {/* <Link href={"/apadrinamiento"} className={`no-underline font-semibold ${pathname.includes("/apadrinamiento")? "text-[#38A251]" : ""}`}>Apadrinamiento</Link> */}
+    <Link href={"/fundaciones"} className={`no-underline font-semibold ${pathname.includes("/fundaciones") ? "text-[#38A251]" : ""}`}>Directorio Fundaciones</Link>
+    <Link href={"/contacto"} className={`no-underline font-semibold ${pathname.includes("/contacto") ? "text-[#38A251]" : ""}`}>Contacto</Link>
+    <Link href={"/reportar"} className={`flex gap-2 no-underline font-semibold items-center ${pathname.includes("/reportar") ? "text-[#38A251]" : ""}`}>
+      <MdOutlineReportProblem size={15} />
       Reportar</Link>
   </>
 

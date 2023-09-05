@@ -1,15 +1,15 @@
 import FullImage from "src/components/FullImage"
-import HomeLayout from "src/layouts/HomeLayout"
 import { BiMap } from 'react-icons/bi'
 import IconHuellita from "src/icons/IconHuellita"
 import { StaticImageData } from "next/image"
 
-import GatitaAleli from '../../assets/gatos-del-campus/aleli.webp'
-import GatitaNany from '../../assets/gatos-del-campus/nany.webp'
-import GatitaSarita from '../../assets/gatos-del-campus/sarita.webp'
-import GatitaLola from '../../assets/gatos-del-campus/lola.webp'
-import GatitoNacho from '../../assets/gatos-del-campus/nacho.webp'
+import GatitaAleli from '../../../assets/gatos-del-campus/aleli.webp'
+import GatitaNany from '../../../assets/gatos-del-campus/nany.webp'
+import GatitaSarita from '../../../assets/gatos-del-campus/sarita.webp'
+import GatitaLola from '../../../assets/gatos-del-campus/lola.webp'
+import GatitoNacho from '../../../assets/gatos-del-campus/nacho.webp'
 import DefaultSeo from "src/SEO/defaultSeo"
+import AnimalesLayout from "src/layouts/AnimalesLayout"
 
 export default () => {
 
@@ -44,7 +44,7 @@ export default () => {
   }
 
   return (
-    <HomeLayout>
+    <AnimalesLayout>
       <DefaultSeo title="Gatos del Campus" />
       <div className="bg-[#007664]">
         <div className="flex flex-col gap-4 p-8 huellitas-bg text-center text-white">
@@ -57,6 +57,6 @@ export default () => {
       <GatitoComponent i={2} gender="female" img={GatitaAleli} name="Alelí" place="Playita de Artes" text="Yo soy Alelí, una gata tímida pero amorosa, mi mejor amiga es Florecita, del personal de seguridad, soy consentida dependiendo de la persona, si ves que no estoy a gusto prefiero evitar que me toquen, vivo un poco enfermita, cuídame mucho, ¡gracias!" />
       <GatitoComponent i={3} gender="female" img={GatitaLola} name="Lola" place="Arquidiseño" text="Yo soy Lola, soy tímida y no soy fan de la gente, si me das mi espacio te lo agradezco, me gusta estar entre los árboles y al igual que mis compañeros gatunos de la U te pido que me cuides y respetes mi lugar, ¡Gracias!" />
       <GatitoComponent i={4} gender="male" img={GatitoNacho} name="Nacho" place="Escaleras eléctricas" text="Yo soy Nacho, me dicen El Casanovas y el título me lo gano porque me encanta que me consientan, primero déjame reconocerte, olfatearte y cuando me acerque puedes acaríciame, soy mimado y amo la comida" />
-    </HomeLayout>
+    </AnimalesLayout>
   )
 }
