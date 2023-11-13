@@ -7,7 +7,9 @@ const connectDB = (handler: any) => async (req: any, res: any) => {
     return handler(req, res);
   }
   // Use new db connection
-  await mongoose.connect(process.env.MONGOOSE_TOKEN);
+  await mongoose.connect(process.env.MONGOOSE_TOKEN, {
+    dbName: "paj"
+  });
   return handler(req, res);
 };
 
