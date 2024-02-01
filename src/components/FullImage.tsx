@@ -33,8 +33,7 @@ export default ({ src, alt = "", cover, contain, className, priority = false }: 
         width: "100%",
         height: (cover || contain) ? "100%" : "auto",
         objectFit: cover ? "cover" : contain ? "contain" : "fill",
-        maxWidth: "100%",
-        height: "auto"
+        maxWidth: "100%"
       }} />
   );
 }
