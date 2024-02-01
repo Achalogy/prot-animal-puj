@@ -11,7 +11,7 @@ export default () => {
           <IconHuellita size={55} svgProps={{
             stroke: "rgb(129 140 248)"
           }} />
-          <a href="https://forms.office.com/r/wt55a2QC1U" className="p-4 bg-indigo-400 w-3/4 xl:w-1/2 text-xl xl:text-2xl font-semibold text-white rounded-md no-underline text-center">
+          <a target="_blank" href="https://forms.office.com/r/368BAMMLxL" className="p-4 bg-indigo-400 w-3/4 xl:w-1/2 text-xl xl:text-2xl font-semibold text-white rounded-md no-underline text-center">
             Únete :D
           </a>
         </div>

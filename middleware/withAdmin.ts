@@ -12,9 +12,9 @@ export default async (req: CustomRequest, res: NextApiResponse, next: NextApiHan
 
   try {
     const decoded: any = verify(token.split(" ").at(-1) ?? "", process.env.TOKEN_KEY ?? "");
-    req.account = await Accounts.findOne({
+    req.account = (await Accounts.findOne({
       username: decoded.username,
-    }) ?? undefined;
+    })) ?? undefined;
   } catch (err) {
     return res.status(401).send("Invalid Token");
   }

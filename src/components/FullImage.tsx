@@ -19,19 +19,22 @@ export default ({ src, alt = "", cover, contain, className, priority = false }: 
     }
   }
 
-  return <Image
-    src={src}
-    alt={alt}
-    {...pageProps}
-    sizes="100vw"
-    width={0}
-    height={0}
-    style={{
-      width: "100%",
-      height: (cover || contain) ? "100%" : "auto",
-      objectFit: cover ? "cover" : contain ? "contain" : "fill"
-    }}
-    className={className}
-    priority={priority}
-  />
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      {...pageProps}
+      width={0}
+      height={0}
+      className={className}
+      priority={priority}
+      sizes="100vw"
+      style={{
+        width: "100%",
+        height: (cover || contain) ? "100%" : "auto",
+        objectFit: cover ? "cover" : contain ? "contain" : "fill",
+        maxWidth: "100%",
+        height: "auto"
+      }} />
+  );
 }

@@ -27,6 +27,9 @@ export default () => {
   return (
     <HomeLayout>
       <DefaultSeo />
+      <div className="px-6 p-4 flex justify-center bg-indigo-400">
+        <p className="text-white font-semibold text-xl text-center">Estamos en inscripciones ¿Te gustaría ser parte del grupo? <a href="/registro" className="font-semibold">¡Únete a nosotros!</a></p>
+      </div>
       <div className="relative flex flex-col xl:flex-row justify-center bg-[#FFD97E] overflow-hidden min-h-[90vh] xl:min-h-[auto]">
         <div className="absolute flex w-full xl:w-2/3 py-[10vh] z-20">
           <div className="rotate-45 opacity-10 m-auto xl:ml-0">
