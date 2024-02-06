@@ -2,6 +2,8 @@
 import IconHuellita from "../../icons/IconHuellita";
 import IconHuesito from "../../icons/IconHuesito";
 import MainLayout from "../../layouts/MainLayout.astro";
+
+import Logo from "../../../assets/icon.jpg";
 ---
 
 <MainLayout>
@@ -11,7 +13,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
         class="flex gap-16 items-center justify-center xl:w-2/3 mx-auto h-full"
       >
         <div class="hidden xl:flex w-[45%]">
-          <img src={"../../../assets/icon.jpg"} class="w-full h-ful rounded-full"  />
+          <img src={Logo.src} class="w-full h-ful rounded-full" />
         </div>
         <div class="flex flex-col gap-8 xl:w-[55%] text-center text-[#ed6d61]">
           <h2 class="text-5xl xl:text-9xl font-black">Nuestra historia</h2>

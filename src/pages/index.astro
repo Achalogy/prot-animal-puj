@@ -2,6 +2,10 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import IconHuellita from "../icons/IconHuellita.jsx";
 import ComiteComponent from "../components/ComiteComponent.astro";
+import GatosDelCampus from "../assets/gatos-del-campus.png";
+import Logo from "../assets/icon.jpg";
+import ComiteActividades from "../assets/actividades.webp";
+import Perro1 from "assets/perro1.webp";
 ---
 
 <MainLayout>
@@ -36,7 +40,7 @@ import ComiteComponent from "../components/ComiteComponent.astro";
         </div>
       </div>
       <div class="relative xl:w-[45%] ml-auto">
-        <img src={"../../assets/perro1.webp"} class="w-full h-full" />
+        <img src={Perro1.src} class="w-full h-full" />
       </div>
     </div>
   </div>
@@ -74,17 +78,17 @@ import ComiteComponent from "../components/ComiteComponent.astro";
     class="flex flex-col xl:flex-row gap-4 xl:gap-2 justify-center items-center xl:w-2/3 text-center mx-auto p-6 xl:py-8"
   >
     <ComiteComponent
-      img={'../assets/gatos-del-campus.png'}
+      img={GatosDelCampus.src}
       title="Comité de gatos de la U"
       text="Encargado del cuidado y alimentación de los gatos que viven en la universidad"
     />
     <ComiteComponent
-      img={'../assets/icon.jpg'}
+      img={Logo.src}
       title="Comité de redes"
       text="Encargado de difundir contenido relacionado con el grupo por redes sociales, difusión de casos, actividades, etc."
     />
     <ComiteComponent
-      img={'../assets/actividades.webp'}
+      img={ComiteActividades.src}
       title="Comité de actividades"
       text="Encargado de organizar y convocar activivdades de alimentación, baño, donaciones y adopciones de animales."
     />

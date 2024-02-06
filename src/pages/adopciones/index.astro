@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
+import Gatito from "../../assets/gatito1.png";
 ---
 
 <MainLayout>
@@ -7,7 +8,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
     <div class="flex xl:h-[85vh] huellitas-bg">
       <div class="flex gap-16 items-center justify-center mx-auto h-full">
         <div class="hidden xl:flex w-[55%] h-full">
-          <img src={"../../assets/gatito1.png"} class="w-full h-full" />
+          <img src={Gatito.src} class="w-full h-full" />
         </div>
         <div class="flex flex-col gap-8 xl:w-[45%] text-center p-[10%] xl:p-0">
           <h2 class="text-5xl xl:text-9xl font-black text-[#FFD97E]">

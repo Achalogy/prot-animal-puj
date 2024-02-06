@@ -1,6 +1,12 @@
 ---
 import GatitoComponent from "../../components/GatitoComponent.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
+
+import GatitaAleli from "../../assets/gatos-del-campus/aleli.webp";
+import GatitaNany from "../../assets/gatos-del-campus/nany.webp";
+import GatitaSarita from "../../assets/gatos-del-campus/sarita.webp";
+import GatitaLola from "../../assets/gatos-del-campus/lola.webp";
+import GatitoNacho from "../../assets/gatos-del-campus/nacho.webp";
 ---
 
 <MainLayout>
@@ -13,7 +19,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
   <GatitoComponent
     i={0}
     gender="female"
-    img={"../../assets/gatos-del-campus/aleli.webp"}
+    img={GatitaNany.src}
     name="Nany"
     place="La Frutera"
     text="Yo soy Nany, una gata muy tímida, no me siento muy a gusto con tanta gente y no me gusta que me miren mientras como, tampoco soy fan de las caricias, pero si me dejas comidita ¡te lo agradezco!"
@@ -21,7 +27,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
   <GatitoComponent
     i={1}
     gender="female"
-    img={"../../assets/gatos-del-campus/nany.webp"}
+    img={GatitaSarita.src}
     name="Sarita"
     place="Básicas"
     text="Yo soy Sarita, soy una señora muy tímida que ama la comida húmeda, me llevo muy bien con el personal de seguridad que me cuida en el lugar donde habito, no me gusta que me toquen, consiénteme dándome comidita"
@@ -29,7 +35,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
   <GatitoComponent
     i={2}
     gender="female"
-    img={"../../assets/gatos-del-campus/sarita.webp"}
+    img={GatitaAleli.src}
     name="Alelí"
     place="Playita de Artes"
     text="Yo soy Alelí, una gata tímida pero amorosa, mi mejor amiga es Florecita, del personal de seguridad, soy consentida dependiendo de la persona, si ves que no estoy a gusto prefiero evitar que me toquen, vivo un poco enfermita, cuídame mucho, ¡gracias!"
@@ -37,7 +43,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
   <GatitoComponent
     i={3}
     gender="female"
-    img={"../../assets/gatos-del-campus/lola.webp"}
+    img={GatitaLola.src}
     name="Lola"
     place="Arquidiseño"
     text="Yo soy Lola, soy tímida y no soy fan de la gente, si me das mi espacio te lo agradezco, me gusta estar entre los árboles y al igual que mis compañeros gatunos de la U te pido que me cuides y respetes mi lugar, ¡Gracias!"
@@ -45,7 +51,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
   <GatitoComponent
     i={4}
     gender="male"
-    img={"../../assets/gatos-del-campus/nacho.webp"}
+    img={GatitoNacho.src}
     name="Nacho"
     place="Escaleras eléctricas"
     text="Yo soy Nacho, me dicen El Casanovas y el título me lo gano porque me encanta que me consientan, primero déjame reconocerte, olfatearte y cuando me acerque puedes acaríciame, soy mimado y amo la comida"
