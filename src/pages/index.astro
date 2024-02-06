@@ -1,0 +1,92 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import IconHuellita from "../icons/IconHuellita.jsx";
+import ComiteComponent from "../components/ComiteComponent.astro";
+---
+
+<MainLayout>
+  <div
+    class="relative flex flex-col xl:flex-row justify-center bg-[#FFD97E] overflow-hidden min-h-[90vh] xl:min-h-[auto]"
+  >
+    <div class="absolute flex w-full xl:w-2/3 py-[10vh] z-20">
+      <div class="rotate-45 opacity-10 m-auto xl:ml-0">
+        <IconHuellita
+          className="hidden xl:flex"
+          size={325}
+          svgProps={{
+            strokeWidth: 5,
+          }}
+        />
+        <IconHuellita
+          className="xl:hidden flex"
+          size={225}
+          svgProps={{
+            strokeWidth: 5,
+          }}
+        />
+      </div>
+    </div>
+    <div class="flex flex-col xl:flex-row flex-1 px-8">
+      <div
+        class="flex flex-col gap-2 items-center justify-center flex-1 text-6xl pb-[5%] xl:pl-[10%]"
+      >
+        <div class="flex flex-col text-[#007664] z-[50]">
+          <h3>Cambiando vidas</h3>
+          <h3 class="font-black">Una huellita a la vez</h3>
+        </div>
+      </div>
+      <div class="relative xl:w-[45%] ml-auto">
+        <img src={"../../assets/perro1.webp"} class="w-full h-full" />
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex flex-col justify-center xl:w-2/3 text-center mx-auto p-6 xl:py-8"
+  >
+    <h2
+      class="flex gap-2 justify-center items-center text-2xl xl:text-4xl font-black mb-8 truncate"
+    >
+      <IconHuellita
+        className="hidden xl:flex"
+        size={25}
+        svgProps={{ strokeWidth: 6 }}
+      />
+      <IconHuellita
+        className="xl:hidden flex"
+        size={15}
+        svgProps={{ strokeWidth: 6 }}
+      />
+      ¿Quienes somos?
+    </h2>
+    <p class="xl:text-lg">
+      ¡Bienvenidos a nuestro sitio web de Protección Animal de la Pontificia
+      Universidad Javeriana! Somos un apasionado grupo de estudiantes
+      comprometidos con el medio ambiente, la fauna y la flora en nuestro campus
+      universitario. Desde <b>2008</b>, nos hemos dedicado a cuidar y proteger a
+      los animales que conviven con nosotros, incluidos los <b
+        >adorables gatos del campus</b
+      >. Nuestra misión es difundir casos, brindar atención y generar conciencia
+      sobre la importancia de respetar y preservar la vida animal. ¡Únete a
+      nuestra comunidad y ayudanos a cambiar vidas <b>Una huellita a la vez</b>!
+    </p>
+  </div>
+  <div
+    class="flex flex-col xl:flex-row gap-4 xl:gap-2 justify-center items-center xl:w-2/3 text-center mx-auto p-6 xl:py-8"
+  >
+    <ComiteComponent
+      img={'../assets/gatos-del-campus.png'}
+      title="Comité de gatos de la U"
+      text="Encargado del cuidado y alimentación de los gatos que viven en la universidad"
+    />
+    <ComiteComponent
+      img={'../assets/icon.jpg'}
+      title="Comité de redes"
+      text="Encargado de difundir contenido relacionado con el grupo por redes sociales, difusión de casos, actividades, etc."
+    />
+    <ComiteComponent
+      img={'../assets/actividades.webp'}
+      title="Comité de actividades"
+      text="Encargado de organizar y convocar activivdades de alimentación, baño, donaciones y adopciones de animales."
+    />
+  </div>
+</MainLayout>

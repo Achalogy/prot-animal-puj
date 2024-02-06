@@ -1,0 +1,66 @@
+---
+import { IconAlertTriangle } from "@tabler/icons-react";
+
+const pathname = Astro.url.pathname;
+---
+
+<a
+  href={"/"}
+  class={`no-underline font-semibold ${
+    pathname == "/" ? "text-[#38A251]" : ""
+  }`}
+>
+  Inicio
+</a>
+<a
+  href={"/nuestra-historia"}
+  class={`no-underline font-semibold ${
+    pathname == "/nuestra-historia" ? "text-[#38A251]" : ""
+  }`}
+>
+  Nuestra Historia
+</a>
+<a
+  href={"gatos-del-campus"}
+  class={`no-underline font-semibold ${
+    pathname == "/gatos-del-campus" ? "text-[#38A251]" : ""
+  }`}
+>
+  Gatos del Campus
+</a>
+<a
+  href={"/adopciones"}
+  class={`no-underline font-semibold ${
+    pathname == "/adopciones" ? "text-[#38A251]" : ""
+  }`}
+>
+  Adopciones
+</a>
+{
+  /* <a href={"/apadrinamiento"} class={`no-underline font-semibold ${pathname == "/apadrinamiento" ? "text-[#38A251]" : ""}`}>Apadrinamiento</a> */
+}
+<a
+  href={"/fundaciones"}
+  class={`no-underline font-semibold ${
+    pathname == "/fundaciones" ? "text-[#38A251]" : ""
+  }`}
+>
+  Directorio Fundaciones
+</a>
+<a
+  href={"/contacto"}
+  class={`no-underline font-semibold ${
+    pathname == "/contacto" ? "text-[#38A251]" : ""
+  }`}
+>
+  Contacto
+</a>
+<a
+  href={"/reportar"}
+  class={`flex gap-2 no-underline font-semibold items-center ${
+    pathname == "/reportar" ? "text-[#38A251]" : ""
+  }`}
+>
+  <IconAlertTriangle size={20} />
+  Reportar
+</a>

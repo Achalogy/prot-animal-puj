@@ -1,0 +1,25 @@
+---
+const { img, title, texts } = Astro.props;
+---
+
+<div
+  class="flex flex-col xl:flex-row gap-4 items-center bg-slate-200 rounded-md drop-shadow-md px-6 p-4 w-[85vw] xl:w-auto"
+>
+  <div class="w-full xl:h-[15vh] xl:w-[20%] mr-auto">
+    <img src={img} class="h-full w-full" />
+  </div>
+  <div class="flex flex-col flex-1 w-[80%]">
+    <p class="font-semibold">{title}</p>
+    {
+      texts.map(({ content, href }: { content: string; href: string }) => {
+        if (href)
+          return (
+            <a href={href} class="truncate text-sky-500 underline">
+              {content}
+            </a>
+          );
+        else return <p class="truncate">{content}</p>;
+      })
+    }
+  </div>
+</div>

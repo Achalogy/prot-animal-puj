@@ -1,0 +1,37 @@
+---
+import { IconMap } from "@tabler/icons-react";
+import IconHuellita from "../icons/IconHuellita";
+
+const { img, name, place, text, gender, i } = Astro.props;
+---
+
+<div class="flex flex-col xl:flex-row xl:h-[55vh]">
+  <div
+    class={`relative flex-1 overflow-hidden ${i % 2 != 0 ? "xl:order-2" : ""}`}
+  >
+    <img src={img} class="w-full h-full" />
+  </div>
+  <div class="flex flex-1 text-center items-center justify-center">
+    <div class="flex flex-col items-center p-4 py-[15%] xl:px-[15%] gap-6">
+      <div class="flex flex-col gap-1">
+        <h2 class="font-semibold text-6xl text-[#007664]">{name}</h2>
+        <p
+          class="flex gap-2 items-center justify-center text-2xl font-semibold"
+        >
+          <IconMap size={25} />
+          {place}
+        </p>
+      </div>
+      <p class="text-lg">{text}</p>
+      <IconHuellita
+        svgProps={{
+          stroke: gender == "male" ? "#0084B0" : "#FF8EBF",
+        }}
+        ,
+        className=""
+        ,
+        size={25}
+      />
+    </div>
+  </div>
+</div>

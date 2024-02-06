@@ -1,0 +1,133 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import FundationComponent from "../../components/FundacionComponent.astro";
+---
+
+<MainLayout>
+  <div class="bg-[#A97BFD]">
+    <div class="flex flex-col gap-2 p-8 huellitas-bg text-center text-white">
+      <h2 class="font-black text-4xl xl:text-6xl">Directorio de Fundaciones</h2>
+      <p class="text-lg">
+        En este espacio podrás encontrar algunas fundaciones que se dedican al
+        rescate y entrega en adopción responsable de perros y gatos callejeros.
+      </p>
+      <p class="text-lg">
+        Existen muchas fundaciones en Colombia que se dedican a esta labor, te
+        invitamos también a que realices una búsqueda personal de más
+        organizaciones de este tipo para que conozcas más de este medio.
+      </p>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4 p-8 xl:w-2/3 mx-auto">
+    <FundationComponent
+      img={"../../assets/fundaciones/InsDistrital.webp"}
+      title="Instituto Distrital de Bienestar y Protección Animal"
+      texts={[
+        {
+          content: "Teléfono conmutador: +57(601) 647 71 17",
+        },
+        {
+          content: "Línea gratuita contra el maltrato: 018000115161",
+        },
+        {
+          content: "https://www.animalesbog.gov.co/",
+          href: "https://www.animalesbog.gov.co/",
+        },
+      ]}
+    />
+    <FundationComponent
+      img={"../../assets/fundaciones/DogPack.webp"}
+      title="Dogpack Fundación"
+      texts={[
+        {
+          content: "https://www.instagram.com/dogpackoficial/",
+          href: "https://www.instagram.com/dogpackoficial/",
+        },
+        {
+          content: "https://linktr.ee/fundaciondogpack",
+          href: "https://linktr.ee/fundaciondogpack",
+        },
+      ]}
+    />
+    <FundationComponent
+      img={"../../assets/fundaciones/ElGatio.webp"}
+      title="Fundación El Gatio"
+      texts={[
+        {
+          content: "https://linktr.ee/fundaciondogpack",
+          href: "https://linktr.ee/fundaciondogpack",
+        },
+      ]}
+    />
+    <FundationComponent
+      img={"../../assets/fundaciones/AmigosDelPlaneta.webp"}
+      title="Fundación Amigos del Planeta"
+      texts={[
+        {
+          content: "https://www.amigosdelplaneta.com/",
+          href: "https://www.amigosdelplaneta.com/",
+        },
+        {
+          href: "https://www.amigosdelplaneta.com/contactanos/",
+          content: "https://www.amigosdelplaneta.com/contactanos/",
+        },
+        {
+          content: "WhatsApp 3213303104",
+        },
+      ]}
+    />
+    <FundationComponent
+      img={"../../assets/fundaciones/DogsAndHugs.webp"}
+      title="Dogs and hugs"
+      texts={[
+        {
+          content: "https://instagram.com/dogsandhugs",
+          href: "https://instagram.com/dogsandhugs",
+        },
+        {
+          content: "https://onx.la/4e548",
+          href: "https://onx.la/4e548",
+        },
+      ]}
+    />
+    <FundationComponent
+      img={"../../assets/fundaciones/AlmaPerruna.webp"}
+      title="Fundación alma perruna"
+      texts={[
+        {
+          content: "https://instagram.com/fundacionalmaperruna",
+          href: "https://instagram.com/fundacionalmaperruna",
+        },
+        {
+          href: "https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6504&utm_source=IG&utm_ medium=ST&utm_campaign=FAP",
+          content:
+            "https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6504&utm_source=IG&utm_medium=ST&utm_campaign=FAP",
+        },
+      ]}
+    />
+    <FundationComponent
+      img={"../../assets/fundaciones/DameVida.webp"}
+      title="Fundación dame vida rescate animal"
+      texts={[
+        {
+          content: "https://instagram.com/fundacion_damevida",
+          href: "https://instagram.com/fundacion_damevida",
+        },
+      ]}
+    />
+    <FundationComponent
+      img={"../../assets/fundaciones/Tepa.webp"}
+      title="Fundación Tepa"
+      texts={[
+        {
+          content: "https://instagram.com/fundacion_tepa",
+          href: "https://instagram.com/fundacion_tepa",
+        },
+        {
+          content: "https://linktr.ee/fundacion_tep",
+          href: "https://linktr.ee/fundacion_tep",
+        },
+      ]}
+    />
+  </div>
+</MainLayout>
